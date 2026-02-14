@@ -1,13 +1,3 @@
-Absolutely! We can make `01_Introduction_to_DSA.md` **look like a classroom lesson**, just like the Big O file. We'll add:
-
-* Emojis for visual cues
-* Tips and notes for beginners
-* “mini callouts” to highlight important points
-* Smooth flow so it feels like a teacher talking
-
-Here’s a polished, beginner-friendly version:
-
----
 
 # 01️⃣ Introduction to DSA — Beginner’s Lesson
 
