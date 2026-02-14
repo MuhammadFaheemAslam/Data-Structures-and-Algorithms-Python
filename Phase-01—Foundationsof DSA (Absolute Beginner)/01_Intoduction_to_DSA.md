@@ -1,10 +1,3 @@
-Perfect 👌
-This will be your **Phase-01 → 01-Introduction-to-DSA.md** content.
-
-You can directly copy this into your GitHub markdown file.
-
----
-
 # 📘 What is DSA?
 
 ## 📌 What is Data Structure?
