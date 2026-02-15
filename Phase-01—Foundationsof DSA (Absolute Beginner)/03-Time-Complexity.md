@@ -1,4 +1,4 @@
-# 03 Time Complexity
+# 📘 Time Complexity
 
 Welcome to a deep dive into **Time Complexity**! In this file, we'll explore what time complexity really means, why measuring seconds is misleading, and how to analyse the efficiency of your code using Big O notation. By the end, you'll be able to look at any algorithm and estimate how its runtime grows with input size.
 
@@ -85,10 +85,97 @@ Thus, complexity = **O(1)**.
 
 ### 🔹 O(log n) – Logarithmic Time
 
+**Occurs when we divide the problem into half repeatedly**
+
 The algorithm reduces the problem size by a constant factor at each step.  
 Common in divide‑and‑conquer approaches (e.g., binary search).
 
-**Example: Binary search in a sorted array**
+**Example1:**
+
+```python
+while n > 1:
+    n = n // 2
+```
+
+---
+
+## 🔍 Step-by-Step Explanation
+
+Assume:
+
+```
+n = 16
+```
+
+Step 1:
+
+```
+16 → 8
+```
+
+Step 2:
+
+```
+8 → 4
+```
+
+Step 3:
+
+```
+4 → 2
+```
+
+Step 4:
+
+```
+2 → 1
+```
+
+It took 4 steps.
+
+Notice:
+
+```
+16 = 2⁴
+```
+
+So steps = 4.
+
+Now assume:
+
+```
+n = 32
+```
+
+Steps:
+
+```
+32 → 16 → 8 → 4 → 2 → 1
+```
+
+Total = 5 steps.
+
+Because:
+
+```
+32 = 2⁵
+```
+
+So number of steps is:
+
+> log₂(n)
+
+So:
+
+> T(n) = log n
+
+Complexity = **O(log n)**
+
+This grows very slowly.
+
+---
+
+**Example2: Binary search in a sorted array**
 ```python
 def binary_search(arr, target):
     left, right = 0, len(arr) - 1
@@ -139,10 +226,65 @@ Thus, complexity = **O(log n)**.
 
 ### 🔹 O(n) – Linear Time
 
+**Time increases linearly with input size**
+
 Runtime grows proportionally to the input size.  
 A single loop that processes each element once is O(n).
 
-**Example: Finding the maximum value**
+**Example1:**
+
+```python
+for i in range(n):
+    print(i)
+```
+
+---
+
+## 🔍 Step-by-Step Explanation
+
+Assume:
+
+```
+n = 5
+```
+
+Loop runs:
+
+```
+i = 0
+i = 1
+i = 2
+i = 3
+i = 4
+```
+
+Total = 5 iterations.
+
+If:
+
+```
+n = 100
+```
+
+Total = 100 iterations.
+
+If:
+
+```
+n = 1,000,000
+```
+
+Total = 1,000,000 iterations.
+
+So operations grow directly with n.
+
+> T(n) = n
+
+So complexity = **O(n)**
+
+---
+
+**Example2: Finding the maximum value**
 ```python
 def find_max(arr):
     max_val = arr[0]
@@ -176,10 +318,37 @@ Thus, complexity = **O(n)**.
 
 ### 🔹 O(n log n) – Linearithmic Time
 
+**Very common in efficient sorting algorithms**
+
 Slightly worse than linear, but still efficient for large datasets.  
 Appears in optimal sorting algorithms like merge sort, heapsort.
 
-**Example: Merge sort (simplified)**
+**Example1:**
+
+```python
+for i in range(n):
+    while m > 1:
+        m = m // 2
+```
+
+If:
+
+* Outer loop runs n times
+* Inner loop runs log n times
+
+Total operations:
+
+> n × log n
+
+So:
+
+> T(n) = n log n
+
+Complexity = **O(n log n)**
+
+---
+
+**Example2: Merge sort (simplified)**
 ```python
 def merge_sort(arr):
     if len(arr) <= 1:
@@ -211,6 +380,7 @@ Let’s verify with small `n`:
 - `n = 1024` → 10 levels → 10,240 operations
 
 The growth is slightly more than linear but much less than quadratic.
+This is much better than O(n²).
 
 Thus, complexity = **O(n log n)**.
 
@@ -218,10 +388,72 @@ Thus, complexity = **O(n log n)**.
 
 ### 🔹 O(n²) – Quadratic Time
 
-Often comes from nested loops where each loop runs about `n` times.  
+**Often comes from nested loops where each loop runs about `n` times**
+
 These algorithms become very slow for large inputs.
 
-**Example: Printing all pairs**
+**Example1:**
+
+```python
+for i in range(n):
+    for j in range(n):
+        print(i, j)
+```
+
+---
+
+## 🔍 Step-by-Step Explanation
+
+Assume:
+
+```
+n = 3
+```
+
+Outer loop runs 3 times.
+
+For each outer iteration, inner loop runs 3 times.
+
+Total:
+
+```
+3 × 3 = 9
+```
+
+If:
+
+```
+n = 10
+```
+
+Total:
+
+```
+10 × 10 = 100
+```
+
+If:
+
+```
+n = 100
+```
+
+Total:
+
+```
+100 × 100 = 10,000
+```
+
+So:
+
+> T(n) = n × n
+> T(n) = n²
+
+That’s why complexity = **O(n²)**
+
+---
+
+**Example2: Printing all pairs**
 ```python
 def print_pairs(arr):
     for i in range(len(arr)):
@@ -249,9 +481,13 @@ That means:
 
 Thus, complexity = **O(n²)**.
 
+Quadratic growth increases very fast.
+
 ---
 
 ### 🔹 O(2ⁿ) – Exponential Time
+
+**Usually appears in recursive problems like naive Fibonacci**
 
 Runtime doubles with each additional input element.  
 Common in naive recursive algorithms that solve a problem of size `n` by solving two problems of size `n-1`.
