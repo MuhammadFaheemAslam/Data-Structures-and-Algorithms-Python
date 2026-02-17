@@ -124,7 +124,7 @@ Master-Python-DSA/
 
 ## 🏗 Learning Path
 
-**Step 1:** Start with [Phase-01 Foundations](Phase-01-Foundations/) → theory, Python DSA, and complexity.
+**Step 1:** Start with [Phase-01 Foundations](Phase-01-Foundations) → theory, Python DSA, and complexity.
 **Step 2:** Progress through **Algorithm Paradigms & Techniques**.
 **Step 3:** Advance into **Searching, Sorting, Linear DS, Recursion, Hashing, Trees, Graphs, DP, String Algorithms**.
 **Step 4:** Explore **Advanced Data Structures & Competitive-Level Algorithms**.
@@ -138,7 +138,7 @@ Master-Python-DSA/
 
 Jump directly to any phase:
 
-[Phase-01](Phase-01-Foundations/) | [Phase-02](Phase-02-Problem-Solving-Foundations/) | [Phase-03](Phase-03-Searching-Sorting/) | [Phase-04](Phase-04-Linear-Data-Structures/) | [Phase-05](Phase-05-Recursion-Backtracking/) | [Phase-06](Phase-06-Hashing/) | [Phase-07](Phase-07-Trees-Heaps/) | [Phase-08](Phase-08-Graphs/) | [Phase-09](Phase-09-Dynamic-Programming/) | [Phase-10](Phase-10-String-Algorithms/) | [Phase-11](Phase-11-Advanced-Data-Structures/) | [Phase-12](Phase-12-Greedy-Math/) | [Phase-13](Phase-13-Competitive-Level/)
+[Phase-01](Phase-01—Foundations) | [Phase-02](Phase-02-Problem-Solving-Foundations) | [Phase-03](Phase-03-Searching-Sorting) | [Phase-04](Phase-04-Linear-Data-Structures) | [Phase-05](Phase-05-Recursion-Backtracking) | [Phase-06](Phase-06-Hashing) | [Phase-07](Phase-07-Trees-Heaps) | [Phase-08](Phase-08-Graphs) | [Phase-09](Phase-09-Dynamic-Programming) | [Phase-10](Phase-10-String-Algorithms) | [Phase-11](Phase-11-Advanced-Data-Structures) | [Phase-12](Phase-12-Greedy-Math) | [Phase-13](Phase-13-Competitive-Level)
 
 ---
 
@@ -156,9 +156,6 @@ Run a sample test script to verify setup:
 ```bash
 python3 scripts/test-runner.py
 ```
-
-Start your DSA journey from: [Phase-01 Foundations](Phase-01-Foundations/)
-
 ---
 
 ## 🛠 Language & Tools
