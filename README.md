@@ -1,7 +1,8 @@
-
-![Python](https://img.shields.io/badge/Python-3.13-blue)
+![Python](https://img.shields.io/badge/python-3.11-blue?logo=python\&logoColor=white)
 ![DSA](https://img.shields.io/badge/DSA-Complete-green)
 ![Interview Ready](https://img.shields.io/badge/Interview-Ready-yellow)
+![License](https://img.shields.io/badge/license-MIT-blue)
+
 
 # 🚀 Master Python Data Structures & Algorithms — From Beginner to Pro 🎯
 
@@ -68,41 +69,143 @@ The course is organized into **17 modules**, from beginner to advanced:
 
 ---
 
-## 💻 Tools & Libraries
+---
 
-* **Python** (primary language)
-* Built-in data structures: `list`, `tuple`, `set`, `dict`
-* `collections` module: `deque`, `Counter`, `defaultdict`
-* `heapq` for priority queues
-* `functools.lru_cache` for memoization in dynamic programming
+## 🚀 Repository Overview
+
+This repository is a **one-stop learning resource** for Python DSA:
+
+* ✅ Theory-first approach for each topic
+* 💻 Python 3.x implementations of all major algorithms & data structures
+* 📊 Time & space complexity analysis
+* 🧩 Pattern-based problem solving
+* 📝 Practice problems categorized by difficulty
+* 🎯 Interview prep materials & coding templates
+* 📚 Project-based learning to apply DSA concepts
+
+It’s designed for **students, job aspirants, competitive programmers, and anyone who wants mastery in Python DSA**.
 
 ---
 
-## ⚡ Highlights
+## 🛠 Prerequisites
 
-* Hands-on **Python implementations** for all data structures and algorithms
-* Interview-focused **problem sets**
-* Step-by-step guidance for **beginner to advanced learners**
-* Focus on **efficient, optimized solutions**
+* Basic knowledge of **Python 3.x**
+* Understanding of **variables, loops, functions, and data types**
 
 ---
 
-## 🌟 Why Learn This Course
+---
 
-* **Prepare for top tech interviews** with confidence
-* **Develop problem-solving mindset** applicable in real-world projects
-* **Build competitive programming skills** for contests like LeetCode, Codeforces, and HackerRank
-* **Master Python** for DSA
+## 📂 Repository Structure
+
+```text
+Master-Python-DSA/
+├── Phase-01-Foundations/                      # DSA basics, Python built-in data structures, Time & Space Complexity
+├── Phase-02-Problem-Solving-Foundations/      # Algorithm paradigms & techniques
+├── Phase-03-Searching-Sorting/                # Searching & Sorting algorithms
+├── Phase-04-Linear-Data-Structures/           # Arrays, Strings, Linked List, Stack, Queue, Deque
+├── Phase-05-Recursion-Backtracking/           # Recursion patterns & backtracking
+├── Phase-06-Hashing/                          # HashMaps, HashSets & frequency techniques
+├── Phase-07-Trees-Heaps/                      # Binary Trees, BST, AVL, Heaps, Tries
+├── Phase-08-Graphs/                           # Graph algorithms & advanced topics
+├── Phase-09-Dynamic-Programming/              # 1D/2D DP, Knapsack, LCS, LIS, DP on Trees & Grids
+├── Phase-10-String-Algorithms/                # String matching, KMP, Z-algo, Trie applications
+├── Phase-11-Advanced-Data-Structures/         # Segment Tree, Fenwick Tree, Sparse Table, Order Statistics
+├── Phase-12-Greedy-Math/                      # Greedy algorithms, Math, Number Theory & Bit tricks
+├── Phase-13-Competitive-Level/                # Heavy-Light Decomposition, Network Flow, Convex Hull, Advanced DP
+├── resources/                                 # Cheatsheets, Templates, Interview Prep, Books, Videos, Practice Guides
+├── projects/                                  # Beginner → Advanced Python projects
+├── scripts/                                   # Automation & test scripts
+├── tests/                                     # Unit tests for algorithms and data structures
+└── docs/                                      # Contributing guide, style guide, FAQ
+```
 
 ---
 
-## 📌 How to Use This Course
+## 🏗 Learning Path
 
-1. Start with the **Python basics** and DSA fundamentals.
-2. Progress module by module, **practicing problems daily**.
-3. Implement each data structure & algorithm in Python.
-4. Solve **coding problems** to reinforce concepts.
-5. Attempt **mock interviews and real-world scenarios** for mastery.
+**Step 1:** Start with [Phase-01 Foundations](Phase-01-Foundations/) → theory, Python DSA, and complexity.
+**Step 2:** Progress through **Algorithm Paradigms & Techniques**.
+**Step 3:** Advance into **Searching, Sorting, Linear DS, Recursion, Hashing, Trees, Graphs, DP, String Algorithms**.
+**Step 4:** Explore **Advanced Data Structures & Competitive-Level Algorithms**.
+**Step 5:** Practice with **projects and interview questions**.
+
+> Each phase contains **theory, templates, implementation files, and categorized practice problems**.
+
+---
+
+## 📌 Quick Navigation
+
+Jump directly to any phase:
+
+[Phase-01](Phase-01-Foundations/) | [Phase-02](Phase-02-Problem-Solving-Foundations/) | [Phase-03](Phase-03-Searching-Sorting/) | [Phase-04](Phase-04-Linear-Data-Structures/) | [Phase-05](Phase-05-Recursion-Backtracking/) | [Phase-06](Phase-06-Hashing/) | [Phase-07](Phase-07-Trees-Heaps/) | [Phase-08](Phase-08-Graphs/) | [Phase-09](Phase-09-Dynamic-Programming/) | [Phase-10](Phase-10-String-Algorithms/) | [Phase-11](Phase-11-Advanced-Data-Structures/) | [Phase-12](Phase-12-Greedy-Math/) | [Phase-13](Phase-13-Competitive-Level/)
+
+---
+
+## ⚡ Quick Start
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/Master-Python-DSA.git
+cd Master-Python-DSA
+```
+
+Run a sample test script to verify setup:
+
+```bash
+python3 scripts/test-runner.py
+```
+
+Start your DSA journey from: [Phase-01 Foundations](Phase-01-Foundations/)
+
+---
+
+## 🛠 Language & Tools
+
+* **Python 3.x** (Clean, readable, standard library)
+* Unit testing using Python’s **unittest / pytest**
+* Optional **visualizations** for understanding algorithms
+
+---
+
+## 📈 Who Is This For?
+
+* Computer Science / Software Engineering students
+* Job seekers preparing for **DSA interviews**
+* Competitive programmers
+* Self-learners seeking a **structured roadmap**
+
+---
+
+## 📚 Resources
+
+* **Cheat Sheets:** Quick reference guides
+* **Templates:** Reusable algorithm and data structure templates
+* **Interview Prep:** Company-wise questions & mock interviews
+* **Practice:** LeetCode, Codeforces, HackerRank tracks
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions!
+
+* Follow **`docs/contributing-guide.md`**
+* Maintain **clean code & documentation**
+* Add **problems, solutions, and new resources**
+
+---
+
+## 📜 License
+
+This repository is licensed under **MIT License** — see `LICENSE` for details.
+
+---
+
+## ⭐ Support
+
+If this repository helps you, **star it** to support the project and help others find it.
 
 ---
 
