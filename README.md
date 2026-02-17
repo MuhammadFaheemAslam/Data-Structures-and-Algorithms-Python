@@ -124,7 +124,7 @@ Master-Python-DSA/
 
 ## 🏗 Learning Path
 
-**Step 1:** Start with [Phase-01 Foundations](Phase-01-Foundations) → theory, Python DSA, and complexity.
+**Step 1:** Start with [Phase-01 Foundations](Phase-01—Foundations) → theory, Python DSA, and complexity.
 **Step 2:** Progress through **Algorithm Paradigms & Techniques**.
 **Step 3:** Advance into **Searching, Sorting, Linear DS, Recursion, Hashing, Trees, Graphs, DP, String Algorithms**.
 **Step 4:** Explore **Advanced Data Structures & Competitive-Level Algorithms**.
