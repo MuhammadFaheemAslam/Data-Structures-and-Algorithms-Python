@@ -3,27 +3,36 @@
 
 ## Introduction
 
-The Python `list` is one of the most versatile and frequently used built‑in data structures. It is an ordered, mutable collection that can hold elements of different data types. Lists are implemented as **dynamic arrays** under the hood, which gives them excellent performance for indexing and appending, but makes insertions and deletions in the middle costly.
+The Python `list` is one of the most versatile and frequently used built‑in data structures. 
+It is an ordered, mutable collection that can hold elements of different data types. 
+Lists are implemented as **dynamic arrays** under the hood, which gives them excellent performance 
+for indexing and appending, but makes insertions and deletions in the middle costly.
 
-In this document, we’ll explore how lists work, their time complexities, memory behavior, and best practices for using them effectively in your algorithms.
+In this document, we’ll explore how lists work, their time complexities, memory behavior, 
+and best practices for using them effectively in your algorithms.
 
 ---
 
 ## Underlying Implementation
 
-Python lists are not linked lists; they are **contiguous arrays of pointers** (in CPython, the reference implementation). Each element stored in a list is actually a pointer to the Python object. The array itself is allocated in a contiguous block of memory, which enables **O(1) random access** via indexing.
+Python lists are not linked lists; they are **contiguous arrays of pointers** (in CPython, the reference implementation). 
+Each element stored in a list is actually a pointer to the Python object. The array itself is allocated in a contiguous block 
+of memory, which enables **O(1) random access** via indexing.
 
 ### Dynamic Resizing
 
-When a list is created, it has a certain **capacity** (the total allocated space) and a **size** (the number of elements actually stored). If you append an element and the size equals the capacity, the list must resize:
+When a list is created, it has a certain **capacity** (the total allocated space) and a **size** (the number of elements actually stored). 
+If you append an element and the size equals the capacity, the list must resize:
 
 1. Allocate a new, larger array (typically ~1.125× or 2× the old size, depending on the Python version).
 2. Copy all existing pointers to the new array.
 3. Free the old array.
 
-This resizing operation takes **O(n)** time, but it happens infrequently. As a result, the **amortized cost** of appending is **O(1)**. (You already studied amortized analysis in Phase‑02.)
+This resizing operation takes **O(n)** time, but it happens infrequently. As a result, the **amortized cost** of appending is **O(1)**. 
+(You already studied amortized analysis in Phase‑02.)
 
-> **Note:** Since lists store pointers, the actual elements (especially large objects) are stored elsewhere in memory; the list only holds references. This means resizing a list does not move the objects themselves – only the pointer array is copied.
+> **Note:** Since lists store pointers, the actual elements (especially large objects) are stored elsewhere in memory; 
+the list only holds references. This means resizing a list does not move the objects themselves – only the pointer array is copied.
 
 ---
 
@@ -42,7 +51,8 @@ This resizing operation takes **O(n)** time, but it happens infrequently. As a r
 
 ## Common Operations and Their Complexities
 
-The following table summarises the time complexity of typical list operations. A detailed analysis with examples is available in [`time-complexity.md`](time-complexity.md).
+The following table summarises the time complexity of typical list operations. A detailed analysis with examples is available 
+in [`time-complexity.md`](time-complexity.md).
 
 | Operation                 | Time Complexity | Notes                                                                 |
 |---------------------------|-----------------|-----------------------------------------------------------------------|
@@ -70,7 +80,8 @@ The following table summarises the time complexity of typical list operations. A
 - The underlying array stores `capacity` pointers; each pointer is 8 bytes on 64‑bit systems.
 - The list itself does not account for the memory of the objects it references – those objects live elsewhere.
 
-When elements are removed, the list’s size decreases, but the capacity usually does not shrink automatically. To free unused memory, you can create a slice copy (`lst = lst[:]`) or use `lst.clear()` (which frees the array in CPython).
+When elements are removed, the list’s size decreases, but the capacity usually does not shrink automatically. To free unused memory, 
+you can create a slice copy (`lst = lst[:]`) or use `lst.clear()` (which frees the array in CPython).
 
 ---
 
@@ -85,9 +96,11 @@ When elements are removed, the list’s size decreases, but the capacity usually
 
 ❌ **Avoid when:**
 
-- You need frequent **insertions or deletions at arbitrary positions** – consider `collections.deque` for ends, or a balanced tree / linked list for interior operations.
+- You need frequent **insertions or deletions at arbitrary positions** – consider `collections.deque` for ends,
+or a balanced tree / linked list for interior operations.
 - You need **fast membership testing** – use a `set` or `dict` if order is not important.
-- You are working with **large, fixed‑size homogeneous data** – consider `array.array` or NumPy arrays for better memory efficiency and performance.
+- You are working with **large, fixed‑size homogeneous data** – consider `array.array` or NumPy arrays 
+for better memory efficiency and performance.
 
 ---
 
