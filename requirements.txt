@@ -1,0 +1,20 @@
+# Master Python DSA — Requirements
+#
+# The core content uses only Python's standard library (by design).
+# The packages below are OPTIONAL and only needed for:
+#   - Running the test suite (pytest)
+#   - Code formatting / linting (contributors)
+#   - Optional visualization scripts (matplotlib)
+#
+# Install with:
+#   pip install -r requirements.txt
+
+# ---- Testing ----
+pytest>=8.0.0
+
+# ---- Linting & Formatting (optional, for contributors) ----
+# black>=24.0.0
+# ruff>=0.5.0
+
+# ---- Visualization (optional) ----
+# matplotlib>=3.8.0
