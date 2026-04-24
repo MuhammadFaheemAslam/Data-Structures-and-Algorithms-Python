@@ -69,25 +69,7 @@ The course is organized into **17 modules**, from beginner to advanced:
 
 ---
 
-## 📊 Progress Overview
-
-| #  | Phase                                    | Status         | Python | Markdown |
-|----|------------------------------------------|----------------|--------|----------|
-| 01 | Foundations                              | ✅ Complete    | 17     | 14       |
-| 02 | Problem-Solving Foundations              | ✅ Complete    | 56     | 22       |
-| 03 | Searching & Sorting                      | ✅ Complete    | 38     | 10       |
-| 04 | Linear Data Structures                   | ✅ Complete    | 38     | 13       |
-| 05 | Recursion & Backtracking                 | ✅ Complete    | 27     | 5        |
-| 06 | Hashing                                  | ✅ Complete    | 14     | 4        |
-| 07 | Trees & Heaps                            | ✅ Complete    | 45     | 7        |
-| 08 | Graphs                                   | ✅ Complete    | 25     | 6        |
-| 09 | Dynamic Programming                      | ✅ Complete    | 24     | 7        |
-| 10 | String Algorithms                        | ⬜ Planned     | —      | —        |
-| 11 | Advanced Data Structures                 | ⬜ Planned     | —      | —        |
-| 12 | Greedy & Math                            | ⬜ Planned     | —      | —        |
-| 13 | Competitive Level                        | ⬜ Planned     | —      | —        |
-
-**Totals so far**: 9 phases · 284 Python files · 88 Markdown files. Every Python file in completed phases ships with stress tests against either a brute-force reference, a Python built-in, or a cross-checked alternate implementation.
+> **Current progress**: 9 of 13 phases complete. See [ROADMAP.md](ROADMAP.md) for the full status table and per-phase breakdown.
 
 ---
 
